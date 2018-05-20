@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="a" src="../untitled1/images/1.jpg" width="0" height="0">
+<img id="b" src="../untitled1/images/2.jpg" width="0" height="0">
+<img id="c" src="../untitled1/images/3.jpg" width="0" height="0">
+<img id="d" src="../untitled1/images/4.jpg" width="0" height="0">
+<img id="f" src="../untitled1/images/5.jpg" width="0" height="0">
+
+<canvas id="myCanvas" width="410" height="300" style="border:1px solid #d3d3d3;">
+  您的浏览器不支持 HTML5 canvas 标签。
+</canvas>
+<script>
+
+
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img1=document.getElementById("a");
+  img1.onload = function()
+  {
+    ctx.drawImage(img1,0,10,130,150);
+  }
+
+
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img2=document.getElementById("b");
+  img2.onload = function()
+  {
+    ctx.drawImage(img2,140,10,130,150);
+  }
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img3=document.getElementById("c");
+  img3.onload = function()
+  {
+    ctx.drawImage(img3,280,10,130,150);
+  }
+
+
+
+</script>
+</body>
+</html>
